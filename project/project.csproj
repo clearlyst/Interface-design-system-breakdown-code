@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{701D4AD8-CFD1-41CE-A040-FCF0717C1BB6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-software.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="application.Designer.cs">
+      <DependentUpon>application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_catalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_catalog.Designer.cs">
+      <DependentUpon>p_catalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils_font_fade_animation.cs" />
+    <Compile Include="utils_font_fade_animation.Designer.cs">
+      <DependentUpon>utils_font_fade_animation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils_font_animation.cs" />
+    <Compile Include="utils_font_animation.Designer.cs">
+      <DependentUpon>utils_font_animation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_contact.Designer.cs">
+      <DependentUpon>p_contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_history.Designer.cs">
+      <DependentUpon>p_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_license.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_license.Designer.cs">
+      <DependentUpon>p_license.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_main.Designer.cs">
+      <DependentUpon>p_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_technology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_technology.Designer.cs">
+      <DependentUpon>p_technology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_status.Designer.cs">
+      <DependentUpon>p_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_network.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_network.Designer.cs">
+      <DependentUpon>p_network.cs</DependentUpon>
+    </Compile>
+    <Compile Include="p_void.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p_void.Designer.cs">
+      <DependentUpon>p_void.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="application.resx">
+      <DependentUpon>application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_catalog.resx">
+      <DependentUpon>p_catalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_contact.resx">
+      <DependentUpon>p_contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_history.resx">
+      <DependentUpon>p_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_license.resx">
+      <DependentUpon>p_license.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_main.resx">
+      <DependentUpon>p_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_status.resx">
+      <DependentUpon>p_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_network.resx">
+      <DependentUpon>p_network.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_technology.resx">
+      <DependentUpon>p_technology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p_void.resx">
+      <DependentUpon>p_void.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offline status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previos-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo-software.ico" />
+    <None Include="Resources\history-page-t.jpeg" />
+    <None Include="Resources\history-page-s.jpeg" />
+    <None Include="Resources\history-page.png" />
+    <None Include="Resources\twitter-icon.png" />
+    <None Include="Resources\instagram-icon.png" />
+    <None Include="Resources\youtube-icon.png" />
+    <None Include="Resources\facebook-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
